@@ -1,0 +1,1 @@
+# Repository for Nomad Coders JS Class

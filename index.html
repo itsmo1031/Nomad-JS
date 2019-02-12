@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Something</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="clock.css" />
+    <!-- <script src="clock.js"></script> -->
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00:00</h1>
+    <!-- Clock Area -->
+    <div class="center">
+      <div id="bar-clock">
+        <div class="hour"><div class="time"></div></div>
+        <div class="minutes"><div class="time"></div></div>
+        <div class="seconds"><div class="time"></div></div>
+        <div id="human-time"></div>
+      </div>
     </div>
+    <!-- Greeting Area -->
     <form action="" class="js-form form">
       <input type="text" name="" id="" placeholder="What is your name?" />
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form action="" class="js-toDoForm">
+    <span class="js-greetings greetings"></span>
+    <!-- ToDo Area -->
+    <form action="" class="js-toDoForm todo">
       <input type="text" name="" id="" placeholder="Write a to do" />
     </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
+    <div class="toDoContainer"><ul class="js-toDoList toDoList"></ul></div>
+    <span class="js-weather weather"></span>
+    <script src="columnClock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
-    <script src="bg.js"></script>
     <script src="weather.js"></script>
   </body>
 </html>
